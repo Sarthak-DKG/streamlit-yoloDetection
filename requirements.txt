@@ -1,0 +1,8 @@
+streamlit
+streamlit-webrtc
+opencv-python
+pyyaml
+#Ultralytics==8.0.26
+cvzone==1.5.6
+streamlit-extras
+ultralytics
