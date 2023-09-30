@@ -46,7 +46,6 @@ class Utils:
         return Utils.model_folders, Utils.model_folder_files 
 
     @classmethod 
-    @st.cache_data 
     def set_model(self,istr):
         Utils.model_name = istr
         modelFileName = "/best.onnx" if istr[-2:] == "v5" else  "/best.pt"
