@@ -1,6 +1,7 @@
 import yaml
 import os
 from streamlit_extras.app_logo import add_logo
+import streamlit as st
 
 def logo():
     add_logo("./images/dkg_logo.png", height=300)
@@ -45,6 +46,7 @@ class Utils:
         return Utils.model_folders, Utils.model_folder_files 
 
     @classmethod 
+    @st.cache_data 
     def set_model(self,istr):
         Utils.model_name = istr
         modelFileName = "/best.onnx" if istr[-2:] == "v5" else  "/best.pt"
