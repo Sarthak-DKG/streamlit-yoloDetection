@@ -6,3 +6,4 @@ pyyaml
 cvzone==1.5.6
 streamlit-extras
 ultralytics
+git-lfs
